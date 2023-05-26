@@ -10,7 +10,7 @@ module Documentation
 
     parent_options = {:class_name => "Documentation::Page", :foreign_key => 'parent_id'}
     parent_options[:optional] = true if ActiveRecord::VERSION::MAJOR >= 5
-    belongs_to :parent, parent_options
+    belongs_to :parent, **parent_options
 
     before_validation do
       if self.position.blank?
