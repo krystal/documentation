@@ -28,5 +28,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'sass-rails', '>= 4.0'
   s.add_dependency 'uglifier', '>= 2.2'
 
-  s.add_development_dependency 'sqlite3', '~> 1.3'
+  s.add_development_dependency 'sqlite3', '~> 1.4'
 end
